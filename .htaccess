@@ -1,1 +1,1 @@
-Redirect * /error/index.html
+ErrorDocument 404 error/index.html
