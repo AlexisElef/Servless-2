@@ -1,0 +1,18 @@
+# Exported from Render on 2024-11-27T13:48:42Z
+services:
+- type: web
+  name: Servless-2
+  runtime: static
+  repo: https://github.com/AlexisElef/Servless-2
+  staticPublishPath: ./
+  routes:
+  - type: rewrite
+    source: /esgi
+    destination: /index.html
+  - type: redirect
+    source: /photo
+    destination: https://media.self.com/photos/57d8c2d024fe9dae32832b7b/master/w_1600,c_limit/cute-kitties-thumb.jpg
+  - type: redirect
+    source: /*
+    destination: /error/index.html
+version: "1"
